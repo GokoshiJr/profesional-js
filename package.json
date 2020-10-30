@@ -1,0 +1,27 @@
+{
+  "name": "goko-profesional-js",
+  "version": "1.0.0",
+  "description": "curso profesional de javascript en platzi",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Julio Gonzalez <julioagonzalez18@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GokoshiJr/profesional-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GokoshiJr/profesional-js/issues"
+  },
+  "homepage": "https://github.com/GokoshiJr/profesional-js#readme"
+}
