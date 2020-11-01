@@ -1,27 +1,27 @@
-// para reproducir el video, boton play/pause
-
+// Clase MediaPlayer
 function MediaPlayer(config) {
-  this.media = config.el;
+	this.media = config.el;
 }
 
 MediaPlayer.prototype.play = function () {
-  this.media.play();
+	this.media.play();
 };
 
 MediaPlayer.prototype.pause = function () {
-  this.media.pause();
+	this.media.pause();
 };
 
 MediaPlayer.prototype.togglePlay = function () {
-  if (this.media.paused) {
-    this.play();
-  } else {
-    this.pause();
-  }
+	if (this.media.paused) {
+		this.play();
+	} else {
+		this.pause();
+	}
 };
 
 const video = document.querySelector('video');
+// Instancia de clase
 const player = new MediaPlayer({el: video});
-
 const button = document.querySelector('button');
+
 button.onclick = () => player.togglePlay();
