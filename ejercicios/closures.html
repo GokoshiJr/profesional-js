@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Closures</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3 mt-4">
+        <h2>Clousure - Clausuras</h2>
+        <p>
+          Son funciones que regresan una función o un objeto con funciones que mantienen 
+          las variables que fueron declaradas fuera de su scope.
+      
+          Los closures nos sirven para tener algo parecido a variables privadas, 
+          característica que no tiene JavaScript por default.
+          Es decir encapsulan variables que
+          no pueden ser modificadas directamente por otros objetos, sólo por funciones 
+          pertenecientes al mismo.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Clousure
+    function makeColorPrinter(color) {
+      let colorMessage = `The color is ${color}`;
+      // funciones que regresan funciones
+      return function() {
+        console.log(colorMessage);
+      }
+    }
+    let greenColorPrinter = makeColorPrinter("Green");
+    // greenColorPrinter();
+
+    // Sin encapsular
+    const contador2 = {
+      count: 3,
+    }
+    console.log(`El contador2 vale:`, contador2.count);
+    contador2.count = 100;
+    console.log(`El contador2 vale`, contador2.count);
+
+
+    // Variables privadas
+    function makeCount(n) {
+      let count = n;
+      return {
+        incrementar: function() {
+          count++;
+        },
+        decrementar: function() {
+          count--;
+        },
+        getContador: function() {
+          return count;
+        }
+      }
+    }
+    let contador = makeCount(10);
+    contador.incrementar()
+    contador.incrementar()
+    console.log(`El contador es:`, contador.getContador());
+  </script>
+</body>
+</html>

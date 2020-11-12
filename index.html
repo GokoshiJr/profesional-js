@@ -5,6 +5,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="src/css/styles.css" />
   </head>
   <body>
@@ -17,7 +18,10 @@
       <video class="movie">
         <source src="src/video/The Weeknd - King Of The Fall.mp4" />
       </video>
-      <button>Play/Pause</button>
+      <div class="row mt-2">
+        <button class="btn btn-dark ml-3" id="boton-1">Play/Pause</button>
+        <button class="btn btn-dark ml-2" id="boton-2">Mute/UnMute</button>
+      </div>
     </main>
     <script type="module" src="src/js/main.js"></script>
   </body>
