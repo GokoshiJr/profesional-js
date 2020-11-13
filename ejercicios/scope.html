@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Scope de JS</title>
   </head>
   <body>
-    <a href="index.html">Go back</a>
-    <p><em>Abre la consola</em></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 mt-4">
+          <h1 class="text-center">Scope</h1>
+          <p class="mt-4" style="font-size: 22px;">
+            <b>El Scope o ámbito</b> es lo que define el tiempo de vida de una variable, en que partes de nuestro código pueden ser usadas. <br><br>
+            
+            <b>Global Scope:</b>
+            Variables disponibles de forma global se usa la palabra var, son accesibles por todos los scripts que se cargan en la página. Aquí hay mucho riesgo de sobreescritura.<br><br>
+
+            <b>Function Scope:</b>
+            Variables declaradas dentro de una función sólo visibles dentro de ella misma (incluyendo los argumentos que se pasan a la función).<br><br>
+
+            <b>Block Scope:</b>
+            Variables definidas dentro de un bloque, por ejemplo variables declaradas dentro un loop while o for. Se usa let y const para declarar este tipo de variables.<br><br>
+
+            <b>Module Scope:</b>
+            Cuando se denota un script de tipo module con el atributo type="module las variables son limitadas al archivo en el que están declaradas.
+          </p>
+          <div class="row mb-4">
+            <a class="ml-3" href="index.html"><h4>Regresar</h4></a>
+            <a class="ml-4" href="closures.html"><h4>Clousures</h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       // Global Scope
