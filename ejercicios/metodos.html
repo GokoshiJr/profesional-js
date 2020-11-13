@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Metodos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 mt-4">
+          <h1 class="text-center">Metodos para establecer this</h1>
+          <p class="mt-4" style="font-size: 22px;">
+            Estas funciones nos sirven para <b>establecer el valor de this</b>, es decir cambiar el contexto que se va usar cuando la función sea llamada. <br><br>
+
+            <b>Las funciones call, apply y bind son parte del prototipo Function.</b> Toda función usa este prototipo y por lo tanto tiene estas tres funciones. <br><br>
+
+            <b>functionName.call().</b> Ejecuta la función recibiendo como primer argumento el this y los siguientes son los argumentos que recibe la función que llamó a call. <br><br>
+
+            <b>functionName.apply().</b>> Ejecuta la función recibiendo como primer argumento el this y como segundo un arreglo con los argumentos que recibe la función que llamó a apply. <br><br>
+
+            <b>functionName.bind().</b> Recibe como primer y único argumento el this. No ejecuta la función, sólo regresa otra función con el nuevo this integrado.
+          </p>
+          <div class="row mb-4">
+            <a class="ml-3" href="index.html"><h4>Regresar</h4></a>
+          </div>
+          <ul>
+            <li><button class="call-to-action">Aprender</button></li>
+            <li><button class="call-to-action">Aprender Mas</button></li>
+            <li><button class="call-to-action">Nunca parer de aprender</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="metodos.js"></script>
+  </body>
+</html>
