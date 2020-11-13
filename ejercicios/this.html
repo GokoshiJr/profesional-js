@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This en JS</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>This</title>
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3 mt-4">
+        <h1 class="text-center">This</h1>
+        <p class="mt-4" style="font-size: 22px;">
+          <b>this se refiere a un objeto,</b> ese objeto es el que actualmente está ejecutando un pedazo de código. <br><br>
+
+          No se puede asignar un valor a this directamente y este depende de en que scope nos encontramos: <br><br>
+
+          Cuando llamamos a this en el Global Scope o Function Scope, se hace referencia al objeto window. <br><br> 
+          
+          A excepción de cuando estamos en strict mode que nos regresará undefined.
+          Cuando llamamos a this desde una función que está contenida en un objeto, this se hace referencia a ese objeto. <br><br>
+
+          Cuando llamamos a this desde una “clase”, se hace referencia a la instancia generada por el constructor.
+        </p>
+        <div class="row mb-4">
+          <a class="ml-3" href="index.html"><h4>Regresar</h4></a>
+          <a class="ml-4" href="scope.html"><h4>Scope</h4></a>
+          <a class="ml-4" href="#"><h4>Siguiente</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="this.js"></script>
 </body>
 </html>
