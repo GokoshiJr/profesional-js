@@ -4,8 +4,11 @@ import AutoPlay from './plugins/AutoPlay.js'
 const video = document.querySelector('video');
 const player = new MediaPlayer({el: video, plugins: [/*new AutoPlay()*/]});
 
-const button = document.getElementById("playButton");
-button.onclick = () => player.togglePlay();
+const playButton = document.getElementById("playButton");
+playButton.onclick = () => player.togglePlay();
 
-const button2 = document.getElementById("muteButton");
-button2.onclick = () => player.toggleMute();
+const muteButton = document.getElementById("muteButton");
+muteButton.onclick = () => player.toggleMute();
+
+const resetButton = document.getElementById("resetButton");
+resetButton.onclick = () => player.reset();

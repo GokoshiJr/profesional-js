@@ -64,4 +64,12 @@ MediaPlayer.prototype.toggleMute = function() {
   }
 }
 
+/**
+ * Resetea el video al comienzo
+ */
+MediaPlayer.prototype.reset = function() {
+  this.media.load();
+  this.play();
+}
+
 export default MediaPlayer;
