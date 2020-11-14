@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Prototype</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3 mt-4">
+        <h1 class="text-center">Herencia Prototypal</h1>
+        <p class="mt-4" style="font-size: 22px;">
+          Por default los objetos en JavaScript tienen cómo prototipo a Object que es el punto de partida de todos los objetos, es el prototipo padre. Object es la raíz de todo, por lo tanto tiene un prototipo padre undefined. <br><br>
+
+          Cuando se llama a una función o variable que no se encuentra en el mismo objeto que la llamó, se busca en toda la prototype chain hasta encontrarla o regresar undefined. <br><br>
+
+          La función hasOwnProperty sirve para verificar si una propiedad es parte del objeto o si viene heredada desde su prototype chain.
+        </p>
+        <div class="row mb-4">
+          <a class="ml-3" href="index.html"><h4>Regresar</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="herenciaPrototypal.js"></script>
+</body>
+</html>
