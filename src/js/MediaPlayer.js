@@ -9,8 +9,20 @@ function MediaPlayer(config) { // el objeto lo llama config
  * Corre el array de plugins
  */
 MediaPlayer.prototype._initPlugins = function() {
+  const player = {
+    play: () => this.play(),
+    pause: () => this.pause(),
+    media: this.media,
+    get muted() { // propiedad virtual
+      return this.media.muted
+    },
+    set muted(value) { // propiedad virtual
+      this.media.muted = value;
+    }, 
+  };
+
   this.plugins.forEach(plugin => {
-    plugin.run(this);
+    plugin.run(player);
   })
 }
 
