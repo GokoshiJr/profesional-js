@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Promesas</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-3 mt-4">
+        <h1 class="text-center">Promesas</h1>
+        <p class="mt-4" style="font-size: 22px;">
+          Para crear las promesas usamos la clase Promise. 
+          El constructor de Promise recibe un sólo argumento, 
+          un callback con dos parámetros, resolve y reject. 
+          resolve es la función a ejecutar cuando se resuelve y 
+          reject cuando se rechaza. <br><br>
+
+          El async/await es sólo syntax sugar de una promesa, 
+          por debajo es exactamente lo mismo.<br><br>
+
+          La clase Promise tiene algunos métodos estáticos bastante útiles:<br><br>
+
+          <b>Promise.all.</b> Da error si una de las promesas es rechazada.<br><br>
+          <b>Promise.race.</b> Regresa sólo la promesa que se resuelva primero.
+        </p>
+        <ul>
+          <li><button id="sequence">Get Top Movies in Sequence</button></li>
+          <li><button id="parallel">Get Top Movies in Parallel</button></li>
+          <li><button id="fastest">Get Fastest Top Movie</button></li>
+        </ul>
+        <ul id="movies"></ul>
+        <div class="row mb-4">
+          <a class="ml-3" href="index.html"><h4>Regresar</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="promesas.js"></script>
+</body>
+</html>
